@@ -5,12 +5,14 @@ export const styles = StyleSheet.create({
     flex: 1,
     margin: 20,
     justifyContent: "space-between",
-    marginTop: 60
+    marginTop: 60,
   },
-
+  
   cabecalho: {
+    flex: 0.2,
     gap: 30,
     flexDirection: "row",
+    marginBottom: 0
   },
 
   iconVoltar: {
@@ -26,11 +28,13 @@ export const styles = StyleSheet.create({
   },
 
   input: {
+    flex: 0.6,
     alignContent: "center",
-    marginBottom: "110%",
+    marginBottom: "140%",
   },
 
   botaoRodape: {
+    flex: 0.2,
     flexDirection: "column-reverse",
   },
 });

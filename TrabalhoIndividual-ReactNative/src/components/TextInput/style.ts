@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
   input: {
     fontSize: 16,
     width: "100%",
-    height: 35,
+    height: 40,
     borderBottomWidth: 1,
     borderColor: "#363636",
     marginTop: "10%",
