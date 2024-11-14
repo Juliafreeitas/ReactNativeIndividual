@@ -5,36 +5,45 @@ import { HeaderApi } from "../../Mock/header";
 
 export const HeaderHome = () => {
   return (
-    <FlatList
-      horizontal={true}
-      data={HeaderApi}
-      keyExtractor={(dados) => dados.id.toString()}
-      renderItem={({ item }) => (
-        <View style={styles.container}>
-          <CardApi data={item} />
-        </View>
-      )}
-    />
-  );
-};
-
-interface PropsApi {
-  data: {
-    titulo: string;
-    icon: ImageSourcePropType | string | any;
-  };
-}
-
-const CardApi = ({ data }: PropsApi) => {
-  return (
-    <View>
-      <View style={styles.btn}>
-        <Text>{data.titulo}</Text>
-        <Image source={data.icon} alt="Icone" style={styles.image} />
+    <View style={styles.container}>
+      <View style={styles.botao}>
+        <Text style={styles.Icon}>AA</Text>
       </View>
-      <View >
-        <Image source={data.icon} alt="Icone" style={styles.image} />
+
+      <View style={styles.botaosearch}>
+        <Image
+          source={require("../../assets/icon.png")}
+          alt="Icon"
+          style={styles.image}
+        />
+        <Text style={styles.texto}>Buscar</Text>
+      </View>
+
+      <View style={styles.botao}>
+        <Image
+          source={require("../../assets/icon.png")}
+          alt="Icon"
+          style={styles.image}
+        />
+      </View>
+      <View style={styles.botao}>
+        <Image
+          source={require("../../assets/icon.png")}
+          alt="Icon"
+          style={styles.image}
+        />
+      </View>
+      <View style={styles.botao}>
+        <Image
+          source={require("../../assets/icon.png")}
+          alt="Icon"
+          style={styles.image}
+        />
+      </View>
+      <View style={styles.notification}>
+        <Text style={styles.textNotification}>20</Text>
       </View>
     </View>
   );
 };
+

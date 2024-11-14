@@ -4,32 +4,45 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 100,
   },
 
   cabecalho: {
     flex: 0.2,
     gap: 30,
     flexDirection: "row-reverse",
-    marginBottom: 0,
-    height: 100,
-    backgroundColor: "green",
-
+    marginBottom: 120,
+    height: 120,
+    // backgroundColor: "green",
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    zIndex: 1,
+    alignItems: "center",
+    
   },
 
   main: {
     flex: 0.6,
     // alignItems: "center",
+    marginTop: 120,
     justifyContent: "center",
   },
   
   rodape: {
-    flex: 0.2,
-    backgroundColor: "green",
-    padding: 20,
-    justifyContent: "space-between",
+    backgroundColor: "#f2f2f2",
+    padding: 5,
+    justifyContent: "center",
     alignItems: "center",
-    flexDirection: "row"
+    flexDirection: "row",
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    zIndex: 1,
+    // position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    marginTop: 100
   },
 
   textoTitulo: {

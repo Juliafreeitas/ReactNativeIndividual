@@ -23,7 +23,7 @@ export const styles = StyleSheet.create({
   },
 
   texto: {
-    fontSize: 16
+    fontSize: 16,
   },
 
   image: {

@@ -23,6 +23,8 @@ interface PropsApi {
   data: {
     titulo: string;
     icon: ImageSourcePropType | string | any;
+    background?: string,
+    colorIcon?: string
   };
 }
 

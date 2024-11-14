@@ -3,47 +3,79 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // margin: 20,
-    justifyContent: "space-between",
-    marginTop: 60,
-  },
-
-  cabecalho: {
-    flex: 0.2,
-    gap: 30,
+    width: '100%',
+    height: 80,
     flexDirection: "row",
-    marginBottom: 0,
-    backgroundColor: "green",
-
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 50
   },
 
-  main: {
+  botao: {
+    // borderWidth: 1,
+    // borderColor: "black",
+    margin: 6,
     alignItems: "center",
     justifyContent: "center",
-    margin: 10
+    height: 70,
+    width: 70,
+    borderRadius: 50,
   },
   
-  rodape: {},
-  
-  saldo: {},
-  
-  btnsmal: {},
-  
-  btnbig: {
-    backgroundColor: '#f2f2f0',
-    height: 65,
-    width: "90%",
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    borderRadius: 8,
-    padding: 20,
-    flexDirection: "row"    
+  texto: {
+    fontWeight: "bold",
   },
-
-  pagar: {},
-
+  
+  
+  
   image: {
-    width: 30,
-    height: 30,
-  }
+    width: 25,
+    height: 25,
+  },
+
+  botaoPagar: {
+    position: "relative",
+    color: "black",
+    backgroundColor: "black",
+    borderRadius: 35,
+    top: -160,
+    right: -280,
+    height: 60,
+    width: 120,
+    paddingVertical: 8,
+    
+    // borderWidth: 1,
+    // borderColor: "red",
+  },
+
+  botaoPagar2: {
+  
+    alignContent: "center",
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "row"
+  },
+  
+  textoPagar: {
+    height: '100%',
+    width: "55%",
+    padding: 10,
+
+    // alignSelf: "center",
+    color: "white",
+    fontWeight: "bold",
+// justifyContent:"center",
+    fontSize: 16,
+    // top: -5
+    // borderWidth: 1,
+    // borderColor: "green",
+  },
+
+  iconPagar: {
+    height: 35,
+    width: 35,
+    tintColor: "white",
+    // borderWidth: 1,
+    // borderColor: "blue",
+  },
 });

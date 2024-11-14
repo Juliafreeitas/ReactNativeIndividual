@@ -33,7 +33,8 @@ export const styles = StyleSheet.create({
 
   subtitulo: {
     margin: 20,
-    marginTop: 0,
+    marginTop: 8,
+    marginBottom: 0,
     color: "white",
     fontSize: 15,
   },
@@ -50,6 +51,25 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  textoBotao: {
+    color: "black",
+    fontWeight: "bold",
+    fontSize: 16,
+  },
+
+  botao2: {
+    backgroundColor: "black",
+    margin: 20,
+    height: 50,
+    borderRadius: 50,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  textoBotao2: {
+    color: "white",
+    fontWeight: "bold",
+    fontSize: 16,
+  },
 
   a: {
     flexDirection: "row",
@@ -58,22 +78,17 @@ export const styles = StyleSheet.create({
     marginRight: 10,
   },
 
-  textoBotao: {
-    color: "black",
-    fontWeight: "bold",
-    fontSize: 16,
-  },
 
   conta: {
     borderRadius: 20,
-    width: "100%",
+    width: 390,
     height: 250,
     backgroundColor: "#1ba284",
     justifyContent: "center",
   },
 
   icon: {
-    height: 24, width: 24,
+    height: 28, width: 28,
     tintColor: "white",
     margin: 5
   },
@@ -82,5 +97,41 @@ export const styles = StyleSheet.create({
     height: 12, width: 12,
     tintColor: "white",
     margin: 5,
-  }
+  },
+
+  hide: {
+    marginLeft: 20,
+    margin: 4,
+    fontSize: 18,
+    borderRadius: 5,
+    width: "30%",
+    backgroundColor: "#3fb198",
+    color: "#3fb198"
+  },
+
+  cartao: {
+    borderRadius: 20,
+    width: 390,
+    height: 250,
+    backgroundColor: "#f2f2f2",
+    justifyContent: "space-between",
+
+    color: 'black',
+  },
+
+  texto2: {
+    color: "black",
+    fontSize: 15,
+    margin: 20,
+    fontWeight: "bold",
+  },
+
+  titulo2: {
+    top: 0,
+    marginBottom: 30,
+    marginLeft: 20,
+    color: "black",
+    fontSize: 28,
+    fontWeight: "bold",
+  },
 });
