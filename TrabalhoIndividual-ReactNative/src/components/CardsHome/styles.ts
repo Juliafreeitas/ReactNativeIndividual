@@ -3,136 +3,121 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   container: {
     margin: 10,
-    marginBottom: 10,
+  },
+
+  conta: {
+    width: 380,
+    height: 250,
+    borderRadius: 20,
+    backgroundColor: "#1ba284",
+    justifyContent: "center",
   },
 
   boxTexto: {
     justifyContent: "space-between",
     flexDirection: "row",
-    alignItems: "center"
-  },
-
-  boxTitulo: {
-    justifyContent: "space-between",
-    flexDirection: "row",
+    margin: 20,
   },
 
   texto: {
     color: "white",
-    fontSize: 15,
-    margin: 20,
     fontWeight: "bold",
   },
 
   titulo: {
-    marginLeft: 20,
     color: "white",
     fontSize: 24,
     fontWeight: "bold",
+    marginLeft: 20,
   },
 
   subtitulo: {
+    color: "white",
     margin: 20,
     marginTop: 8,
     marginBottom: 0,
-    color: "white",
     fontSize: 15,
   },
 
-  botaoolho: {
-    width: 50
+  hide: {
+    width: "30%",
+    margin: 4,
+    marginLeft: 20,
+    borderRadius: 5,
+    backgroundColor: "#3fb198",
+    color: "#3fb198",
+    fontSize: 18,
   },
 
-  botao: {
-    backgroundColor: "white",
-    margin: 20,
-    height: 50,
-    borderRadius: 50,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  textoBotao: {
-    color: "black",
-    fontWeight: "bold",
-    fontSize: 16,
-  },
-
-  botao2: {
-    backgroundColor: "black",
-    margin: 20,
-    height: 50,
-    borderRadius: 50,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  textoBotao2: {
-    color: "white",
-    fontWeight: "bold",
-    fontSize: 16,
-  },
-
-  a: {
+  visible: {
     flexDirection: "row",
     justifyContent: "space-between",
-    alignContent: "center",
     marginRight: 10,
   },
 
-
-  conta: {
-    borderRadius: 20,
-    width: 390,
-    height: 250,
-    backgroundColor: "#1ba284",
-    justifyContent: "center",
-  },
-
-  icon: {
-    height: 28, width: 28,
-    tintColor: "white",
-    margin: 5
+  botaoolho: {
+    width: 50,
   },
 
   seta: {
-    height: 12, width: 12,
+    width: 10,
+    height: 10,
     tintColor: "white",
-    margin: 5,
   },
 
-  hide: {
-    marginLeft: 20,
-    margin: 4,
-    fontSize: 18,
-    borderRadius: 5,
-    width: "30%",
-    backgroundColor: "#3fb198",
-    color: "#3fb198"
+  icon: {
+    width: 28,
+    height: 28,
+    tintColor: "white",
+  },
+
+  botao: {
+    height: 50,
+    margin: 20,
+    borderRadius: 50,
+    backgroundColor: "white",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  textoBotao: {
+    fontSize: 16,
+    fontWeight: "bold",
   },
 
   cartao: {
     borderRadius: 20,
-    width: 390,
+    width: 380,
     height: 250,
     backgroundColor: "#f2f2f2",
-    justifyContent: "space-between",
-
-    color: 'black',
   },
 
-  texto2: {
-    color: "black",
+  textoCartao: {
     fontSize: 15,
     margin: 20,
+    marginBottom: 15,
     fontWeight: "bold",
   },
 
-  titulo2: {
-    top: 0,
+  tituloCartao: {
     marginBottom: 30,
     marginLeft: 20,
     marginRight: 60,
-    color: "black",
     fontSize: 24,
     fontWeight: "bold",
+  },
+
+  botaoCartao: {
+    height: 50,
+    margin: 20,
+    borderRadius: 50,
+    backgroundColor: "black",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  textoBotaoCartao: {
+    color: "white",
+    fontSize: 18,
   },
 });

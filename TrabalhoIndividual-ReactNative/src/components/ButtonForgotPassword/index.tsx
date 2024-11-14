@@ -1,18 +1,18 @@
-import { Text, TouchableOpacity } from 'react-native'
-import { styles } from './style'
+import { Text, TouchableOpacity } from "react-native";
+import { styles } from "./style";
 
 interface PropsButton {
-  title: string,
-  handleFunction: () => void
+  title: string;
+  handleFunction: () => void;
 }
 
-export default function ButtonForgotPassoword({title, handleFunction}: PropsButton) {
+export default function ButtonForgotPassoword({
+  title,
+  handleFunction,
+}: PropsButton) {
   return (
-    <TouchableOpacity
-      onPress={handleFunction}
-      style={styles.botao}
-    >
+    <TouchableOpacity onPress={handleFunction} style={styles.botao}>
       <Text style={styles.texto}>{title}</Text>
     </TouchableOpacity>
-  )
+  );
 }

@@ -4,26 +4,24 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     margin: 20,
-    justifyContent: "space-between",
     marginTop: 60,
+    justifyContent: "space-between",
   },
   
   cabecalho: {
-    flex: 0.2,
     gap: 30,
     flexDirection: "row",
-    marginBottom: 0
   },
 
   iconVoltar: {
     width: 25,
     height: 30,
-    marginTop: 3,
+    marginTop: 2,
   },
 
   textoCabecalho: {
-    fontWeight: "bold",
     fontSize: 22,
+    fontWeight: "bold",
     alignItems: "flex-start",
   },
 
@@ -35,6 +33,5 @@ export const styles = StyleSheet.create({
 
   botaoRodape: {
     flex: 0.2,
-    flexDirection: "column-reverse",
   },
 });

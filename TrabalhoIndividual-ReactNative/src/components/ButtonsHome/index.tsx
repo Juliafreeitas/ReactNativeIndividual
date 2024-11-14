@@ -1,29 +1,14 @@
+import React from "react";
 import {
-  View,
-  Text,
   FlatList,
   Image,
   ImageSourcePropType,
-  Touchable,
+  Text,
   TouchableOpacity,
+  View,
 } from "react-native";
-import React from "react";
-import { styles } from "./styles";
 import { HomeApi } from "../../Mock/home";
-
-export const ButtonsHome = () => {
-  return (
-    <FlatList
-      data={HomeApi}
-      keyExtractor={(dados) => dados.id.toString()}
-      renderItem={({ item }) => (
-        <View style={styles.container}>
-          <CardApi data={item} />
-        </View>
-      )}
-    />
-  );
-};
+import { styles } from "./styles";
 
 interface PropsApi {
   data: {
@@ -36,11 +21,25 @@ const CardApi = ({ data }: PropsApi) => {
   return (
     <View style={styles.main}>
       <TouchableOpacity>
-        <View style={styles.btnbig}>
+        <View style={styles.botao}>
           <Text style={styles.texto}>{data.titulo}</Text>
           <Image source={data.icon} alt="Icone" style={styles.image} />
         </View>
       </TouchableOpacity>
     </View>
+  );
+};
+
+export const ButtonsHome = () => {
+  return (
+    <FlatList
+      data={HomeApi}
+      keyExtractor={(dados) => dados.id.toString()}
+      renderItem={({ item }) => (
+        <View>
+          <CardApi data={item} />
+        </View>
+      )}
+    />
   );
 };

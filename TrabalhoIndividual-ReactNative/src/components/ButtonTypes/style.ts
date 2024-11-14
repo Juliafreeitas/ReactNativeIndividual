@@ -1,14 +1,16 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  botao: {
-    margin: 40,
+  styleButton: {
+    height: 45,
+    borderRadius: 12,
     alignItems: "center",
+    justifyContent: "center",
   },
 
-  texto: {
+  text: {
+    color: "white",
     fontSize: 17,
-    textDecorationLine: "underline",
-    padding: 20,
+    fontWeight: "bold",
   },
 });

@@ -1,7 +1,6 @@
-import { View, Text, Image, TouchableOpacity, ScrollView } from "react-native";
 import React, { useState } from "react";
+import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
-// import { icon } from "../../assets/icon.png";
 
 export const CardsHome = () => {
   const [saldo, setSaldo] = useState<number>(0);
@@ -10,6 +9,7 @@ export const CardsHome = () => {
   return (
     <ScrollView horizontal={true}>
       <View style={styles.container}>
+
         <View style={styles.conta}>
           <View style={styles.boxTexto}>
             <Text style={styles.texto}>Conta</Text>
@@ -17,7 +17,7 @@ export const CardsHome = () => {
               <Text style={styles.texto}>
                 Ver extrato
                 <Image
-                  source={require("../../Mock/images/arrow.png")}
+                  source={require("../../assets/arrow.png")}
                   alt="Seta"
                   style={styles.seta}
                 />
@@ -27,7 +27,7 @@ export const CardsHome = () => {
 
           <Text style={styles.titulo}>Saldo em Conta</Text>
 
-          <View style={styles.boxTitulo}>
+          <View >
             {visibility === true ? (
               <Text style={styles.titulo}>R$ {saldo}</Text>
             ) : (
@@ -35,7 +35,7 @@ export const CardsHome = () => {
             )}
           </View>
 
-          <View style={styles.a}>
+          <View style={styles.visible}>
             <Text style={styles.subtitulo}>Rendendo 102% do CDI</Text>
             <TouchableOpacity
               onPress={() => setVisibility(!visibility)}
@@ -43,13 +43,13 @@ export const CardsHome = () => {
             >
               {visibility === true ? (
                 <Image
-                  source={require("../../Mock/images/closedeye.png")}
+                  source={require("../../assets/closedeye.png")}
                   alt="Olho fechado"
                   style={styles.icon}
                 />
               ) : (
                 <Image
-                  source={require("../../Mock/images/eye.png")}
+                  source={require("../../assets/eye.png")}
                   alt="Olho aberto"
                   style={styles.icon}
                 />
@@ -61,15 +61,17 @@ export const CardsHome = () => {
             <Text style={styles.textoBotao}>Use cartão de outro banco</Text>
           </TouchableOpacity>
         </View>
+
       </View>
       <View style={styles.container}>
+        
         <View style={styles.cartao}>
-          <Text style={styles.texto2}>Cartão</Text>
-          <Text style={styles.titulo2}>
+          <Text style={styles.textoCartao}>Cartão</Text>
+          <Text style={styles.tituloCartao}>
             Limite de crédito pra você sem anuidade
           </Text>
-          <TouchableOpacity style={styles.botao2}>
-            <Text style={styles.textoBotao2}>Conheça o cartão</Text>
+          <TouchableOpacity style={styles.botaoCartao}>
+            <Text style={styles.textoBotaoCartao}>Conheça o cartão</Text>
           </TouchableOpacity>
         </View>
       </View>

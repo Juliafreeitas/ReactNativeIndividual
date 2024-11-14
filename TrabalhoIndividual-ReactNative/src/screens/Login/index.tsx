@@ -1,17 +1,17 @@
-import {
-  View,
-  Text,
-  Image,
-  Alert,
-  TouchableWithoutFeedback,
-  Keyboard,
-} from "react-native";
-import { styles } from "./style";
-import Seta from "../../assets/setaverde.png";
-import TextInputField from "../../components/TextInput";
 import { useState } from "react";
-import ButtonTypes from "../../components/ButtonTypes";
+import {
+  Alert,
+  Image,
+  Keyboard,
+  Text,
+  TouchableWithoutFeedback,
+  View,
+} from "react-native";
+import Seta from "../../assets/setaverde.png";
 import ButtonForgotPassoword from "../../components/ButtonForgotPassword";
+import ButtonTypes from "../../components/ButtonTypes";
+import TextInputField from "../../components/TextInput";
+import { styles } from "./style";
 
 export default function Login() {
   const [cpf, setCpf] = useState<string>("");

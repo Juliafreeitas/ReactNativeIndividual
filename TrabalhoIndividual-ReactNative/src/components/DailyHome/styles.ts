@@ -1,49 +1,40 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    height: "100%",
-    alignItems: "center",
-  },
-
   main: {
     margin: 8,
     height: 150,
     width: 100,
-    borderRadius: 10,
   },
 
-  btnbig: {
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#f2f2f2",
+  botao: {
     height: 80,
     width: 100,
     borderRadius: 15,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#f2f2f2",
   },
 
   botaopix: {
-    backgroundColor: "#1ba284",
-    tintColor: "white",
-    color: "white",
     height: 80,
     width: 100,
     borderRadius: 15,
-    justifyContent: "center",
     alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#1ba284",
+    tintColor: "white",
     marginBottom: 5,
   },
 
   botaomore: {
-    // backgroundColor: "blue",
-    justifyContent: "center",
-    alignItems: "center",
-    borderWidth: 2,
-    borderColor: "lightgray",
     height: 80,
     width: 100,
     borderRadius: 15,
+    alignItems: "center",
+    justifyContent: "center",
+    borderWidth: 2,
+    borderColor: "lightgray",
   },
 
   texto: {
@@ -52,20 +43,19 @@ export const styles = StyleSheet.create({
   },
 
   image: {
-    width: 25,
-    height: 25,
+    width: 30,
+    height: 30,
   },
 
   subtitulo: {
-    backgroundColor: "black",
-    color: "white",
-    padding: 3,
     width: 80,
-    marginLeft: 10,
-    alignItems: "center",
+    color: "white",
+    backgroundColor: "black",
     borderRadius: 12,
-    textAlign: "center",
+    marginLeft: 10,
+    padding: 3,
     fontSize: 10,
     fontWeight: "bold",
+    textAlign: "center",
   },
 });

@@ -2,24 +2,11 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    width: '100%',
+    width: "100%",
     flexDirection: "row",
     marginTop: 50,
-    // borderWidth: 1,
-    // borderColor: "red",
-    bottom: 0,
     alignItems: "center",
-    justifyContent: "center",
-    marginLeft: 20
-    // margin: 20,
-    // justifyContent: "space-between",
-    // marginTop: 60,
-    // flexDirection: "row",
-    
-    // justifyContent: "center",
-    // alignItems: "center",
-    
+    marginLeft: 10,
   },
 
   botao: {
@@ -30,23 +17,11 @@ export const styles = StyleSheet.create({
     marginHorizontal: 3,
     alignItems: "center",
     justifyContent: "center",
-    
-  },
-  
-  botaosearch: {
-    marginHorizontal: 3,
-    margin: 10,
-    width: 200,
-    borderRadius: 40,
-    backgroundColor: "#f2f2f2",
-    height: 45,
-    alignItems: "center",
-    justifyContent: "flex-start",
-    flexDirection: "row",
-    // justifyContent: "space-evenly"
-    
   },
 
+  Icon: {
+    fontSize: 16,
+  },
 
   image: {
     width: 20,
@@ -54,28 +29,30 @@ export const styles = StyleSheet.create({
     margin: 10,
   },
 
-texto: {
-color: "lightgray",
-fontSize: 15,
-},
+  botaosearch: {
+    width: 200,
+    height: 45,
+    margin: 10,
+    backgroundColor: "#f2f2f2",
+    borderRadius: 40,
+    alignItems: "center",
+    flexDirection: "row",
+  },
 
-  Icon: {
-    fontSize: 16,
-    color: "black",
-    tintColor: "black",
-    position: "absolute",
+  texto: {
+    color: "lightgray",
+    fontSize: 15,
   },
 
   notification: {
-    position: "relative",
-    backgroundColor: "#f57454",
     width: 20,
     height: 20,
     borderRadius: 20,
-    top: -12,
-    right: 70,
-    alignItems: "center",
+    backgroundColor: "#f57454",
     justifyContent: "center",
+    alignItems: "center",
+    right: 70,
+    top: -12,
   },
 
   textNotification: {

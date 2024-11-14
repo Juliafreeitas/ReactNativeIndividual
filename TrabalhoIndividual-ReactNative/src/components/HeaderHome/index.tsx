@@ -1,28 +1,8 @@
-import {
-  View,
-  Text,
-  FlatList,
-  Image,
-  ImageSourcePropType,
-  TouchableOpacity,
-  Alert,
-} from "react-native";
-import React, { useState } from "react";
+import React from "react";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
-import { HeaderApi } from "../../Mock/header";
 
-
-interface MessagemAlerta {
-  titulo: string;
-}
-
-const AlertButton = (titulo: string) => {
-  Alert.alert("Botão de ", titulo);
-}
 export const HeaderHome = () => {
-  // const [titulo, setTitulo] = useState<string>("");
-
-
   return (
     <View style={styles.container}>
       <View style={styles.botao}>
@@ -31,8 +11,8 @@ export const HeaderHome = () => {
 
       <View style={styles.botaosearch}>
         <Image
-          source={require("../../assets/icon.png")}
-          alt="Icon"
+          source={require("../../assets/search.png")}
+          alt="Icone de lupa"
           style={styles.image}
         />
         <Text style={styles.texto}>Buscar</Text>
@@ -41,8 +21,8 @@ export const HeaderHome = () => {
       <View style={styles.botao}>
         <TouchableOpacity>
           <Image
-            source={require("../../assets/icon.png")}
-            alt="Icon"
+            source={require("../../assets/info.png")}
+            alt="Icone de informação"
             style={styles.image}
           />
         </TouchableOpacity>
@@ -51,8 +31,8 @@ export const HeaderHome = () => {
       <View style={styles.botao}>
         <TouchableOpacity>
           <Image
-            source={require("../../assets/icon.png")}
-            alt="Icon"
+            source={require("../../assets/message.png")}
+            alt="Icone de messagens"
             style={styles.image}
           />
         </TouchableOpacity>
@@ -61,8 +41,8 @@ export const HeaderHome = () => {
       <View style={styles.botao}>
         <TouchableOpacity>
           <Image
-            source={require("../../assets/icon.png")}
-            alt="Icon"
+            source={require("../../assets/bell.png")}
+            alt="Icone de sino"
             style={styles.image}
           />
         </TouchableOpacity>

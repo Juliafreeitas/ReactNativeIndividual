@@ -1,24 +1,17 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-
   main: {
-    alignItems: "center",
-    justifyContent: "center",
     margin: 6,
+    alignItems: "center",
   },
 
-  btnbig: {
-    backgroundColor: "#f2f2f2",
-    height: 65,
+  botao: {
     width: "96%",
-    alignItems: "center",
-    justifyContent: "space-between",
-    borderRadius: 8,
     padding: 20,
+    borderRadius: 8,
+    backgroundColor: "#f2f2f2",
+    justifyContent: "space-between",
     flexDirection: "row",
   },
 
