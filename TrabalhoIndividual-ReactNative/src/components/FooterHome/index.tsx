@@ -26,14 +26,12 @@ export const HeaderFooter = () => {
       />
       <View style={styles.botaoPagar}>
         <TouchableOpacity style={styles.botaoPagar2}>
-          <Text style={styles.textoPagar}>
-            Pagar
-            </Text>
-            <Image
-              source={require("../../Mock/images/qrcode.png")}
-              alt="Icon de qr code"
-              style={styles.iconPagar}
-              />
+          <Text style={styles.textoPagar}>Pagar</Text>
+          <Image
+            source={require("../../Mock/images/qrcode.png")}
+            alt="Icon de qr code"
+            style={styles.iconPagar}
+          />
         </TouchableOpacity>
       </View>
     </View>
@@ -42,6 +40,7 @@ export const HeaderFooter = () => {
 
 interface PropsApi {
   data: {
+    id: number;
     titulo: string;
     icon: ImageSourcePropType | string | any;
   };
@@ -49,11 +48,22 @@ interface PropsApi {
 
 const CardApi = ({ data }: PropsApi) => {
   return (
-    <View style={styles.botao}>
-      <View>
-        <Image source={data.icon} alt="Icone" style={styles.image} />
-      </View>
-      <Text style={styles.texto}>{data.titulo}</Text>
+    <View>
+      {data.id === 1 ? (
+        <TouchableOpacity style={styles.botaofocus}>
+          <View>
+            <Image source={data.icon} alt="Icone" style={{tintColor: "white", height: styles.image.height, width: styles.image.width}} />
+          </View>
+          <Text style={{fontWeight: styles.texto.fontWeight, color: "white"}}>{data.titulo}</Text>
+        </TouchableOpacity>
+      ) : (
+        <TouchableOpacity style={styles.botao}>
+          <View>
+            <Image source={data.icon} alt="Icone" style={styles.image} />
+          </View>
+          <Text style={styles.texto}>{data.titulo}</Text>
+        </TouchableOpacity>
+      )}
     </View>
   );
 };

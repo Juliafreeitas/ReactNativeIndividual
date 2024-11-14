@@ -78,4 +78,16 @@ export const styles = StyleSheet.create({
     // borderWidth: 1,
     // borderColor: "blue",
   },
+
+  botaofocus: {
+    backgroundColor: "#1ba284",
+    margin: 6,
+    alignItems: "center",
+    justifyContent: "center",
+    height: 70,
+    width: 70,
+    borderRadius: 50,
+    color: "white",
+    tintColor: "white"
+  },
 });

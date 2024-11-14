@@ -1,4 +1,12 @@
-import { View, Text, FlatList, Image, ImageSourcePropType } from "react-native";
+import {
+  View,
+  Text,
+  FlatList,
+  Image,
+  ImageSourcePropType,
+  Touchable,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
 import { styles } from "./styles";
 import { HomeApi } from "../../Mock/home";
@@ -27,10 +35,12 @@ interface PropsApi {
 const CardApi = ({ data }: PropsApi) => {
   return (
     <View style={styles.main}>
-      <View style={styles.btnbig}>
-        <Text style={styles.texto}>{data.titulo}</Text>
-        <Image source={data.icon} alt="Icone" style={styles.image} />
-      </View>
+      <TouchableOpacity>
+        <View style={styles.btnbig}>
+          <Text style={styles.texto}>{data.titulo}</Text>
+          <Image source={data.icon} alt="Icone" style={styles.image} />
+        </View>
+      </TouchableOpacity>
     </View>
   );
 };

@@ -5,8 +5,7 @@ export const DailyApi = [
     id: 1,
     titulo: "Pix",
     icon: icon,
-    backgroud: "#",
-    colorIcon: 'white'
+    subtitulo: "EM ATÉ 12X",
 
   },
   {

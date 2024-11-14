@@ -1,4 +1,11 @@
-import { View, Text, FlatList, Image, ImageSourcePropType } from "react-native";
+import {
+  View,
+  Text,
+  FlatList,
+  Image,
+  ImageSourcePropType,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
 import { styles } from "./styles";
 import { HomeApi } from "../../Mock/home";
@@ -21,20 +28,34 @@ export const DailyHome = () => {
 
 interface PropsApi {
   data: {
+    id: number;
     titulo: string;
-    icon: ImageSourcePropType | string | any;
-    background?: string,
-    colorIcon?: string
+    icon: ImageSourcePropType;
+    subtitulo?: string;
   };
 }
 
 const CardApi = ({ data }: PropsApi) => {
   return (
     <View style={styles.main}>
-      <View style={styles.btnbig}>
-        <Image source={data.icon} alt="Icone" style={styles.image} />
-      </View>
-      <Text style={styles.texto}>{data.titulo}</Text>
+      {data.id !== 1 ? (
+        <TouchableOpacity>
+          <View style={data.id === 11 ? styles.botaomore : styles.btnbig}>
+            <Image source={data.icon} alt={data.titulo} style={styles.image} />
+          </View>
+          <Text style={styles.texto}>{data.titulo}</Text>
+        </TouchableOpacity>
+      ) : (
+        <TouchableOpacity>
+          <View style={styles.botaopix}>
+            <Image source={data.icon} alt={data.titulo} style={{tintColor: "white", height: styles.image.height, width: styles.image.width}} />
+          </View>
+          <Text style={styles.subtitulo}>{data.subtitulo}</Text>
+          <Text style={styles.texto}>{data.titulo}</Text>
+        </TouchableOpacity>
+      )}
     </View>
   );
 };
+
+//styles.btnbig
